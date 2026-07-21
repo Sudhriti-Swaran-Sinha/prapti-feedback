@@ -46,7 +46,7 @@ submitBtn.addEventListener("click", async () => {
         }
 
     } catch (error) {
-
+        console.error("Error submitting question:", error);
         message.style.color = "red";
         message.textContent = "Unable to connect to server.";
 
